@@ -16,7 +16,11 @@ function escapeHtml(unsafe:string) {
 function noteHeaders(noteBody:string) {
 	const headers = [];
 	const lines = noteBody.split('\n');
+    var code_block = false;
 	for (const line of lines) {
+		const code_block_match = line.match(/^```/);
+		if (code_block_match) code_block = !code_block;
+        if (code_block) continue;
 		const match = line.match(/^(#+)\s(.*)*/);
 		if (!match) continue;
 		headers.push({
