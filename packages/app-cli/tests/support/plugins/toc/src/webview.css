@@ -9,3 +9,7 @@
 	color: var(--joplin-color);
 	text-decoration: none;
 }
+
+html {
+    overflow: scroll;
+}
