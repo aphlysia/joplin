@@ -71,9 +71,9 @@ joplin.plugins.register({
 
 					itemHtml.push(`
 						<p class="toc-item" style="padding-left:${(header.level - 1) * 15}px">
-							<a class="toc-item-link" href="javascript:;" data-slug="${escapeHtml(slug)}">
+							<span class="toc-item-link" data-slug="${escapeHtml(slug)}">
 								${escapeHtml(header.text)}
-							</a>
+							</span>
 						</p>
 					`);
 				}

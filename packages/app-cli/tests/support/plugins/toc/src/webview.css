@@ -5,9 +5,9 @@
 	font-family: var(--joplin-font-family);
 }
 
-.toc-item a {
+.toc-item span {
 	color: var(--joplin-color);
-	text-decoration: none;
+    cursor: pointer;
 }
 
 html {
